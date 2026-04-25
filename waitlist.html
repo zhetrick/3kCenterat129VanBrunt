@@ -646,7 +646,7 @@ footer{
               <div class="ms-hint">Used only to confirm your submission. We will not contact you for other purposes.</div>
             </div>
             <div class="ms-field">
-              <label class="ms-label" for="lottery-number">Child's MySchools Lottery Number <span>*</span></label>
+              <label class="ms-label" for="lottery-number">Child's MySchools Lottery Number </label>
               <input class="ms-input" type="text" id="lottery-number" placeholder="e.g. 2026-BK-3K-00000">
               <div class="ms-hint">
                 <strong>How to find this:</strong> Log in to <a href="https://myschools.nyc" target="_blank">myschools.nyc</a> → Click your child's name → Edit Profile → Scroll to <strong>#5 "Application Random Number"</strong> → Copy the full string. This helps us verify each signup is unique.
@@ -739,7 +739,7 @@ async function submitForm() {
   const lottery    = document.getElementById('lottery-number').value.trim();
   const err        = document.getElementById('form-error');
 
-  if (!parentName || !childName || !email || !lottery || !selectedRank) {
+  if (!parentName || !childName || !email || !selectedRank) {
     err.style.display = 'block';
     err.textContent = 'Please fill in all required fields and select a rank.';
     return;
